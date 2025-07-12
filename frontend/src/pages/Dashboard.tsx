@@ -1,15 +1,12 @@
 import React from 'react';
 import {
   Grid,
-  Paper,
   Typography,
   Box,
   Card,
   CardContent,
-  LinearProgress,
   Chip,
   Avatar,
-  Divider,
   IconButton,
   Button,
 } from '@mui/material';
@@ -120,7 +117,7 @@ const Dashboard: React.FC = () => {
       {/* Stats Cards */}
       <Grid container spacing={3}>
         {stats.map((stat, index) => (
-          <Grid item xs={12} sm={6} md={3} key={index}>
+          <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
             <Card className="h-full">
               <CardContent className="p-6">
                 <Box className="flex items-center justify-between mb-4">
@@ -149,7 +146,7 @@ const Dashboard: React.FC = () => {
 
       {/* Charts */}
       <Grid container spacing={3}>
-        <Grid item xs={12} md={8}>
+        <Grid size={{ xs: 12, md: 8 }}>
           <Card>
             <CardContent className="p-6">
               <Typography variant="h6" className="font-semibold mb-4">
@@ -169,7 +166,7 @@ const Dashboard: React.FC = () => {
           </Card>
         </Grid>
         
-        <Grid item xs={12} md={4}>
+        <Grid size={{ xs: 12, md: 4 }}>
           <Card>
             <CardContent className="p-6">
               <Typography variant="h6" className="font-semibold mb-4">
@@ -216,7 +213,7 @@ const Dashboard: React.FC = () => {
 
       {/* Recent Activity */}
       <Grid container spacing={3}>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Card>
             <CardContent className="p-6">
               <Box className="flex items-center justify-between mb-4">
@@ -264,7 +261,7 @@ const Dashboard: React.FC = () => {
           </Card>
         </Grid>
         
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Card>
             <CardContent className="p-6">
               <Box className="flex items-center justify-between mb-4">
@@ -324,7 +321,7 @@ const Dashboard: React.FC = () => {
             Quick Actions
           </Typography>
           <Grid container spacing={2}>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
               <Button
                 variant="outlined"
                 fullWidth
@@ -335,7 +332,7 @@ const Dashboard: React.FC = () => {
                 Upload Document
               </Button>
             </Grid>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
               <Button
                 variant="outlined"
                 fullWidth
@@ -346,7 +343,7 @@ const Dashboard: React.FC = () => {
                 New Query
               </Button>
             </Grid>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
               <Button
                 variant="outlined"
                 fullWidth
@@ -356,7 +353,7 @@ const Dashboard: React.FC = () => {
                 View Analytics
               </Button>
             </Grid>
-            <Grid item xs={12} sm={6} md={3}>
+            <Grid size={{ xs: 12, sm: 6, md: 3 }}>
               <Button
                 variant="outlined"
                 fullWidth

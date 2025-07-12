@@ -78,7 +78,7 @@ export interface TableContent {
 export interface ChartContent {
   id: string;
   type: 'line' | 'bar' | 'pie' | 'scatter' | 'other';
-  data: any;
+  data: Record<string, unknown>;
   title?: string;
   position: { page: number; x: number; y: number };
   analysis?: string;
@@ -131,7 +131,7 @@ export interface QueryResult {
   context: string;
   position: ResultPosition;
   type: 'text' | 'image' | 'table' | 'chart' | 'code';
-  metadata: any;
+  metadata: Record<string, unknown>;
 }
 
 export interface ResultPosition {
@@ -154,7 +154,7 @@ export interface Integration {
   id: string;
   name: string;
   type: 'webhook' | 'api' | 'export';
-  config: any;
+  config: Record<string, unknown>;
   enabled: boolean;
 }
 

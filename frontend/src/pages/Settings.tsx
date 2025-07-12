@@ -117,7 +117,7 @@ const Settings: React.FC = () => {
 
   const renderProfileTab = () => (
     <Grid container spacing={3}>
-      <Grid item xs={12} md={6}>
+      <Grid size={{ xs: 12, md: 6 }}>
         <Card>
           <CardContent className="p-6">
             <Typography variant="h6" className="font-semibold mb-4">
@@ -191,7 +191,7 @@ const Settings: React.FC = () => {
         </Card>
       </Grid>
       
-      <Grid item xs={12} md={6}>
+      <Grid size={{ xs: 12, md: 6 }}>
         <Card>
           <CardContent className="p-6">
             <Typography variant="h6" className="font-semibold mb-4">
@@ -241,7 +241,7 @@ const Settings: React.FC = () => {
 
   const renderPreferencesTab = () => (
     <Grid container spacing={3}>
-      <Grid item xs={12} md={6}>
+      <Grid size={{ xs: 12, md: 6 }}>
         <Card>
           <CardContent className="p-6">
             <Typography variant="h6" className="font-semibold mb-4">
@@ -292,7 +292,7 @@ const Settings: React.FC = () => {
         </Card>
       </Grid>
       
-      <Grid item xs={12} md={6}>
+      <Grid size={{ xs: 12, md: 6 }}>
         <Card>
           <CardContent className="p-6">
             <Typography variant="h6" className="font-semibold mb-4">
@@ -385,7 +385,7 @@ const Settings: React.FC = () => {
 
   const renderIntegrationsTab = () => (
     <Grid container spacing={3}>
-      <Grid item xs={12}>
+      <Grid size={12}>
         <Card>
           <CardContent className="p-6">
             <Box className="flex items-center justify-between mb-4">
@@ -410,7 +410,7 @@ const Settings: React.FC = () => {
                   <ListItemText
                     primary={integration.name}
                     secondary={
-                      <Box className="flex items-center space-x-2">
+                      <span className="flex items-center space-x-2">
                         <Chip
                           label={integration.status}
                           size="small"
@@ -423,7 +423,7 @@ const Settings: React.FC = () => {
                         <Typography variant="caption" className="text-gray-500">
                           {integration.type}
                         </Typography>
-                      </Box>
+                      </span>
                     }
                   />
                   <ListItemSecondaryAction>
@@ -439,7 +439,7 @@ const Settings: React.FC = () => {
         </Card>
       </Grid>
       
-      <Grid item xs={12}>
+      <Grid size={12}>
         <Card>
           <CardContent className="p-6">
             <Typography variant="h6" className="font-semibold mb-4">
@@ -486,7 +486,7 @@ const Settings: React.FC = () => {
 
   const renderSecurityTab = () => (
     <Grid container spacing={3}>
-      <Grid item xs={12} md={6}>
+      <Grid size={{ xs: 12, md: 6 }}>
         <Card>
           <CardContent className="p-6">
             <Typography variant="h6" className="font-semibold mb-4">
@@ -520,7 +520,7 @@ const Settings: React.FC = () => {
         </Card>
       </Grid>
       
-      <Grid item xs={12} md={6}>
+      <Grid size={{ xs: 12, md: 6 }}>
         <Card>
           <CardContent className="p-6">
             <Typography variant="h6" className="font-semibold mb-4">
@@ -540,7 +540,7 @@ const Settings: React.FC = () => {
         </Card>
       </Grid>
       
-      <Grid item xs={12}>
+      <Grid size={12}>
         <Card>
           <CardContent className="p-6">
             <Typography variant="h6" className="font-semibold mb-4">
